@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stats and Data!!!"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:textColor="#910c46"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:background="#f5c4f2"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_2018"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/button_2018"
+                android:background="@drawable/round"/>
+
+            <ImageButton
+                android:id="@+id/btn_2019"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/button_2019"
+                android:background="@drawable/round"/>
+
+            <ImageButton
+                android:id="@+id/btn_2020"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/button2020"
+                android:background="@drawable/round"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

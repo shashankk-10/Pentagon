@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Interviews!!!"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:textColor="#ff0000"
+        android:textSize="38dp"
+        android:layout_margin="20dp"/>
+
+    <GridLayout
+        android:id="@+id/gl"
+        android:layout_below="@+id/tv"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_box">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/interview"
+                android:background="@drawable/grid_items"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interview 1"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/interview"
+                android:background="@drawable/grid_items"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interview 2"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</RelativeLayout>
